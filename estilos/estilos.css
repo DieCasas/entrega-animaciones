@@ -1,0 +1,648 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+/*Mobile*/
+
+@media (max-width: 480px){
+    
+    /* Grid general */
+    
+    #gridArea {
+        display: grid;
+        grid-template-areas:
+        "menu"
+        "cabeza"
+        "presentacion"
+        "servicios"
+        "acercaDe"
+        "profesionales"
+        "contacto"
+        "pie"
+        ;
+        grid-template-columns: 100%;
+    }
+    
+    header {
+        background-color: cadetblue;
+        grid-area: cabeza;
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+       
+    }
+
+    nav {
+        grid-area: menu;
+       
+    }
+    
+    #presentacion {
+        background-color: cadetblue;
+        grid-area: presentacion;
+        display: flex;
+        justify-content: center;
+       
+    }
+    
+    #servicios {
+    
+        grid-area: servicios;
+       
+    }
+    
+    #acercaDe{
+        grid-area: acercaDe;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+    
+    }
+    
+    #contacto {
+        grid-area: contacto;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    #profesionales {
+        grid-area: profesionales;
+        
+    }
+    
+    footer {
+        grid-area: pie;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    /* Header */
+
+    .titulo {
+        display: flex;
+        align-self: center;
+    }
+
+    .logo {
+        display: flex;
+        align-self: center;
+    }
+    
+    .servicios {
+        display: flex;
+        align-self: center;
+    }
+
+    .acercaDe {
+        display: flex;
+        align-self: center;
+    }
+
+    .profesionales {
+        display: flex;
+        align-self: center;
+    }
+
+    .contacto {
+        display: flex;
+        align-self: center;
+    }
+
+    /* Presentacion */
+
+    .presentacion {
+        justify-content: center;
+    }
+    .tituloPresentacion {
+        padding: 20px;
+
+    }
+
+
+    /* Servicios */
+
+    .tituloServicios {
+        display: flex;
+        justify-content: center;
+    }
+
+    article {
+        display: flex;
+        flex-flow: wrap;
+        margin: 10px 20px;
+        padding: 10px;
+    }
+
+    .masInfoPresentacion {
+        margin: 10px 30px; 
+    }
+
+    /* Acerca de */
+
+    .tituloAcercaDe {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .textoAcercaDe {
+        justify-content: center;
+        margin: 30px;
+    }
+
+    .imagenAcercaDe {
+        margin-left: 70px;
+        padding: 20px;
+    }
+
+    .masInfoAcercaDe {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Profesionales */
+
+    .tituloProfesionales {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .imagenProfesionales {
+        width: 300px;
+        margin-left: 70px;
+        padding-bottom: 20px;
+    }
+
+    .textoProfesionales {
+        text-align: center;
+    }
+
+    /* Contacto */
+
+    .tituloContacto {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .direccionContacto {
+        display: flex;
+        width: 350px;
+    }
+
+    .instagramContacto {
+        display: flex;
+        margin-left: 120px;
+        padding: 10px;
+    }
+
+    .mensajeInstagramContacto {
+
+        text-align: center;
+    }
+
+    .whatsappContacto {
+        display: flex;
+        margin-left: 140px;
+        padding: 10px;
+    }
+
+    .mensajeWhatsappContacto {
+        text-align: center;
+    }
+
+    /* Grid Pro 1*/
+
+    #gridProfesional1 {
+        display: grid;
+        grid-template-areas: 
+        "menu"
+        "cabeza"
+        "presentacionPro1"
+        "tecnicasPro1"
+        "contactoPro1"
+        "pie"
+        ;
+    }
+
+    header {
+        grid-area: cabeza;
+    }
+    nav {
+        grid-area: menu;
+    }
+
+    .presentacionPro1 {
+        grid-area: presentacionPro1;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .tecnicasPro1{
+        grid-area: tecnicasPro1;
+    }
+
+    .contactoPro1 {
+        grid-area: contactoPro1;
+        display: flex;
+        flex-flow: column;
+        align-content: center;
+    }
+
+    footer {
+        grid-area: pie;
+    }
+
+    /* Header Pro 1 */
+
+    .tituloPro1 {
+        display: flex;
+        align-self: center;
+    }
+
+    .logoPro1 {
+        display: flex;
+        align-self: center;
+    }
+    
+    .presentacionPro1 {
+        display: flex;
+        align-self: center;
+    }
+
+    .tecnicasPro1 {
+        display: flex;
+        align-self: center;
+    }
+
+    .contactoPro1 {
+        display: flex;
+        align-self: center;
+    }
+
+    /* Presentacion Pro 1 */
+    
+    .tituloPresentacionPro1 {
+        text-align: center;
+    }
+    
+    .imagenPresentacionPro1 {
+        align-self: center;
+    }
+
+    .textoPresentacionPro1 {
+        text-align: center;
+    }
+
+    /* Tecnicas Pro 1 */
+
+    .tituloTecnicasPro1 {
+        text-align: center;
+    }
+
+    .listaTecnicasPro1 {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: justify;
+    }
+
+    /* Contacto Pro 1 */
+
+    .tituloContactoPro1 {
+        text-align: center;
+    }
+
+    .logoContactoPro1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .textoContactoPro1 {
+        text-align: center;
+    }
+}
+
+/*Tablet
+
+
+/*Desktop*/
+@media (min-width: 1024px) {
+     /* Grid general */
+    
+     #gridArea {
+        display: grid;
+        grid-template-areas:
+        "menu cabeza"
+        "menu presentacion"
+        "menu servicios"
+        "menu acercaDe"
+        "menu profesionales"
+        "menu contacto"
+        "menu pie"
+        ;
+        grid-template-columns: 10% auto;
+    }
+    
+    header {
+        background-color: cadetblue;
+        grid-area: cabeza;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-flow: row nowrap;
+        margin: 10px;
+        padding: 20px;
+       
+    }
+
+    nav {
+
+        grid-area: menu;
+       
+    }
+    
+    #presentacion {
+        background-color: cadetblue;
+        grid-area: presentacion;
+        display: flex;
+        justify-content: center;
+       
+    }
+    
+    #servicios {
+        grid-area: servicios;
+       
+    }
+    
+    #acercaDe{
+        grid-area: acercaDe;
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+        align-content: center;
+    
+    }
+    
+    #contacto {
+        grid-area: contacto;
+        display: flex;
+    
+    }
+    
+    #profesionales {
+        grid-area: profesionales;
+        
+    }
+    
+    footer {
+        background-color: cadetblue;
+        grid-area: pie;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Header */
+
+    .titulo {
+        display: flex;
+    }
+
+    .logo {
+        display: flex;
+
+
+    }
+    
+    .servicios {
+        display: flex;
+
+
+    }
+
+    .acercaDe {
+        display: flex;
+
+    }
+
+    .profesionales {
+        display: flex;
+
+        
+    }
+
+    .contacto {
+        display: flex;
+
+    }
+
+    /* Presentacion */
+
+    .tituloPresentacion {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .imagenPresentacion {
+        margin: 20px;
+    }
+
+    /* Servicios */
+
+    .tituloServicios {
+        text-align: center;
+        margin: 15px;
+    }
+
+    .herramientasServicios {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .masInfoPresentacion {
+        text-align: center;
+        margin-bottom: 15px;
+        
+    }
+
+    /* Acerca de */
+
+    #gridAcercaDe{
+        display: grid;
+        grid-template-areas: 
+        "tituloAcercaDe tituloAcercaDe"
+        "textoAcercaDe imagenAcercaDe"
+        "infoAcercaDe infoAcercaDe";
+        background-color: cadetblue;
+    }
+
+    .tituloAcercaDe {
+        grid-area: tituloAcercaDe;
+    }
+
+    .textoAcercaDe {
+        grid-area: textoAcercaDe;
+    }
+
+    .imagenAcercaDe {
+        grid-area: imagenAcercaDe;
+    }
+
+    .masInfoAcercaDe {
+        grid-area: infoAcercaDe;
+        display: flex;
+        justify-content: end;
+    }
+
+    /* Profesionales */
+
+    #gridProfesionales {
+        display: grid;
+        grid-template-areas: 
+        "tituloProfesionales tituloProfesionales"
+        "imagenProfesionales textoProfesionales";
+
+    }
+
+    .tituloProfesionales {
+        grid-area: tituloProfesionales;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .imagenProfesionales {
+        grid-area: imagenProfesionales;
+        width: 200px;
+
+    }
+
+    .textoProfesionales {
+        grid-area: textoProfesionales;
+    }
+
+    /* Contacto */
+
+    #gridContacto {
+        display: grid;
+        grid-template-areas: 
+        "tituloContacto tituloContacto"
+        "direccion instagram"
+        "direccion whatsapp";
+    }
+
+    .tituloContacto {
+        grid-area: tituloContacto;
+    }
+
+    .direccionContacto {
+        grid-area: direccion;
+    }
+
+    .instagramContacto {
+        grid-area: instagram;
+    }
+
+
+    .whatsappContacto {
+        grid-area: whatsapp;
+    }
+
+
+
+    /* Estilos profesional 1 */
+
+    #gridProfesional1 {
+        display: grid;
+        grid-template-areas: 
+        "menu cabeza"
+        "menu presentacionPro1"
+        "menu tecnicasPro1"
+        "menu contactoPro1"
+        "menu pie";
+        grid-template-columns: 10% auto;
+    }
+
+    .presentacionPro1 {
+        grid-area: presentacionPro1;
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+
+    .tecnicasPro1 {
+        grid-area: tecnicasPro1;
+    }
+
+    .contactoPro1 {
+        grid-area: contactoPro1;
+    }
+
+    /* Presentacion Pro 1*/
+
+    .descripcionPro1 {
+        display: flex;
+        flex-flow: row nowrap; 
+        justify-content: space-evenly;
+
+    }
+
+    .tituloPresentacionPro1 {
+        text-align: center;
+
+    }
+    
+    .imagenPresentacionPro1 {
+        align-self: center;
+    }
+
+    .textoPresentacionPro1 {
+        text-align: center;
+    }
+
+    /* Tecnicas Pro 1 */
+
+    .tituloTecnicasPro1 {
+        text-align: center;
+    }
+
+    .listaTecnicasPro1 {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: justify;
+    }
+
+    /* Contacto Pro 1 */
+
+    .tituloContactoPro1 {
+        text-align: center;
+    }
+
+    .logoContactoPro1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .textoContactoPro1 {
+        text-align: center;
+    }
+
+} 
+
+    
+
+
+
+
+
+
+
+

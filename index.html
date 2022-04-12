@@ -1,0 +1,85 @@
+<!doctype html >
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Primeros pasos de mi proyecto</title>
+        <link rel="stylesheet" href="./estilos./estilos.css">
+        
+    </head>
+
+    <body id="gridArea">
+        <!-- La idea es que el menú sea desplegable, que se vaya abriendo al elegír el servicio, y tipo del mismo, y al elegír el profesional te lleve a una descripción del mismo -->
+        <nav >
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina/profesional1.html">Profesional1</a></li>
+            </ul>
+        </nav>
+        <header id="Arriba" >
+            <h1 class="titulo"> ICOPAR </h1>
+            <img src="Imagenes/icopar.jpeg" width="60" alt="Logo" class="logo" > <!-- Esto deberia ir al lado del nombre -->
+            <h2 class="servicios"><a href="">Servicios</a></h2>
+            <h2 class="acercaDe"><a href="">Acerca de</a></h2>
+            <h2 class="profesionales"><a href="" >Profesionales</a></h2>
+            <h2 class="contacto"><a href="">Contacto</a></h2>  <!-- Esto deberia ir todo en la misma linea --> 
+        </header>
+        <main>   <!-- Sección que se usa para dar una breve presentacion del lugar -->
+            <section id="presentacion">
+                <article class="presentacion">
+                    <h2 class="tituloPresentacion"><em>Somos un equipo que...</em></h2>
+                    <img src="Imagenes/img-de-prueba.jpg" width="300" alt="Imagen del lugar" class="imagenPresentacion">
+                </article><!-- Imagen que va justo de bajo de la presentación, mostrando el lugar -->
+            </section>
+            <section id="servicios"> <!-- Sección que se usa para explicar las herramientas del lugar -->
+                    <h2 class="tituloServicios"><strong>Nuestros servicios</strong></h2>
+                <div class="herramientasServicios">
+                    <article>
+                        <strong ><a href="paginas/abordaje-temprano.html" >Abordaje temprano</strong></a>
+                        <p class="textoServicios"><em>Se cuenta un poco sobre la técnica</em></p>
+                    </article>
+                    <article>
+                        <strong >Integración sensorial</strong>
+                        <p ><em>Se cuenta un poco sobre la técnica</em></p> 
+                    </article>
+                    <article>
+                        <strong >Terapia ocupacional</strong> 
+                        <p ><em>Se cuenta un poco sobre la técnica</em></p>
+                    </article>
+                </div>
+                    <h5 class="masInfoPresentacion">¡Para conocer mas sobre las técnicas hace click sobre las mismas!</h5>
+            </section>
+            <section id="gridAcercaDe"> <!-- Sección que se usa para explicar y contar la historia del lugar -->
+                    <h2 class="tituloAcercaDe">Acerca de nosotros</h2>
+                    <p class="textoAcercaDe"><em>Se cuenta un poco la historia del lugar Sean bienvenides, me dicen "Chyste" (¿Y qué hiciste?)
+                        Triunfé con el nombre menos comercial que existe
+                        Y de children vine de teacher, fui Splinter
+                        Pero me siento más como una tortuga ninja</em></p> 
+                    <a href="paginas/historia.html" class="imagenAcercaDe"> <img src="Imagenes/prueba.jpg" width="300" alt="No es, solo prueba" ></a>
+                    <h4 class="masInfoAcercaDe" ><em>¡Conoce mas de nosotros haciendo click en la imagen!</em></h3>  <!-- Permite ir a un apartado donde se cuenta mas sobre el lugar y su filosofia de trabajo -->
+            </section>
+            <section id="gridProfesionales"><!-- Sección que se usa para presentar a los profesionales -->
+                    <h2 class="tituloProfesionales">Profesionales</h2>
+                    <img src="Imagenes/img-profesional.jpg" width="100" alt="Representacion de un profesional del lugar" class="imagenProfesionales">
+                    <p class="textoProfesionales">Se presenta el profesional con una descripción</p>
+            </section>
+            <section id="gridContacto"><!-- Sección de información de contacto -->
+                    <h2 class="tituloContacto">¡Contactanos!</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.901035392148!2d-57.97816488504176!3d-34.90893298121759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e7bb01f9c727%3A0x892864d6882ff7b9!2sC.%2033%20%26%20C.%2015%2C%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1647263627001!5m2!1ses-419!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" class="direccionContacto"></iframe>
+                    <div class="instagramContacto">
+                        <a href="https://www.instagram.com/" ><img src="imagenes/logo-instagram.jfif" width="100" alt="Instagram" ></a>
+                        <h3 class="mensajeInstagramContacto"><em><strong>¡Seguinos en instagram!</strong></em></h3>
+                    </div>
+                    <div class="whatsappContacto">
+                        <a href="https://web.whatsapp.com/" ><img src="imagenes/logo-whatsapp.jfif" width="55" alt="whatsapp" ></a>  
+                        <h3 class="mensajeWhatsappContacto"><em ><strong>Tambien podes contactarnos por WhatsApp</strong></em></h3>
+                    </div>
+            </section> <!-- Datos de contacto -->
+        </main>
+        <footer class="border">
+            <a href="#Arriba">Ir al inicio</a>
+            <p> pie de pagina - ©2022 - desarrollado por:</p>
+        </footer>
+    </body>
+
+</html>
